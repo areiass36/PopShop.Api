@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "0sXnfWU2i3u3Vw0mu37KVuruXnO285pd/f+LHHQ1bg0aja2xnd5mrdk+IPssOBBy8Gtple253XseY0QZCvsnwg==",
+  "dgSpecHash": "JDP29C+wg4jgcXwsnHyZVeEv3GJA+6gBjEO5xvZfWRRftD3rei1CGqkK0SLK2pzIa93Z19Co0Rq3YG2yCYK57g==",
   "success": true,
   "projectFilePath": "/home/mark/Projects/PopShop/PopShop.Api/PopShop.Api/PopShop.Api.csproj",
   "expectedPackageFiles": [
@@ -54,6 +54,7 @@
     "/home/mark/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
     "/home/mark/.nuget/packages/microsoft.win32.registry/4.7.0/microsoft.win32.registry.4.7.0.nupkg.sha512",
     "/home/mark/.nuget/packages/microsoft.win32.systemevents/4.7.0/microsoft.win32.systemevents.4.7.0.nupkg.sha512",
+    "/home/mark/.nuget/packages/newtonsoft.json/13.0.1/newtonsoft.json.13.0.1.nupkg.sha512",
     "/home/mark/.nuget/packages/swashbuckle.aspnetcore/6.2.3/swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
     "/home/mark/.nuget/packages/swashbuckle.aspnetcore.swagger/6.2.3/swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
     "/home/mark/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.2.3/swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
