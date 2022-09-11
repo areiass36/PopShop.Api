@@ -8,8 +8,21 @@ namespace PopShop.Api.Controllers;
 public class ProductController : ControllerBase
 {
 	[HttpGet]
-	public async Task<PageResult<Product>> GetClient([FromQuery] PageResult<ProductFilter>)
+	public async Task<PageResponse<Product>> GetClient([FromQuery] PageRequest<ProductFilter> request)
 	{
-		return "Hello World";
+		return new PageResponse<Product>()
+		{
+			CurrentPage = 1,
+			HasNextPage = false,
+			MaxPage = 1,
+			Result = new []
+			{
+				new Product()
+				{
+					Id = Guid.NewGuid(),
+					Name = "Produto A"
+				}
+			}
+		};
 	}
 }
