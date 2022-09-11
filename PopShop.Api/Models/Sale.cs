@@ -1,3 +1,5 @@
+using System.Text.Json;
+
 namespace PopShop.Api.Models;
 
 public class Sale
@@ -8,4 +10,5 @@ public class Sale
 	public string Address { get; set; }
 	public DateTime CreationDate { get; set; }
 	public bool Active { get; set; }
+	public string sla { get; set; }
 }

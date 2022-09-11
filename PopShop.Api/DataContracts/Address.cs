@@ -1,5 +1,3 @@
-using System.Text.Json.Serialization;
-using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 
 namespace PopShop.Api.DataContract;

@@ -1,4 +1,3 @@
-using System.Reflection.Metadata;
 using PopShop.Api.Configurations;
 
 var builder = WebApplication.CreateBuilder(args);
