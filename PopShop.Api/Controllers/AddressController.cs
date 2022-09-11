@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
-
+using PopShop.Api.Configurations;
 namespace PopShop.Api.Controllers;
 
 [ApiController]

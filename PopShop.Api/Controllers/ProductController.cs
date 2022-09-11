@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using PopShop.Api.DataContract;
 
 namespace PopShop.Api.Controllers;
 
@@ -7,7 +8,7 @@ namespace PopShop.Api.Controllers;
 public class ProductController : ControllerBase
 {
 	[HttpGet]
-	public string GetClient()
+	public async Task<PageResult<Product>> GetClient([FromQuery] PageResult<ProductFilter>)
 	{
 		return "Hello World";
 	}
