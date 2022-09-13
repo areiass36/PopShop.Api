@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using PopShop.Api.DataAccess;
 using PopShop.Api.DataContract;
 
 namespace PopShop.Api.Controllers;
@@ -7,22 +8,18 @@ namespace PopShop.Api.Controllers;
 [Route("[controller]")]
 public class ProductController : ControllerBase
 {
-	[HttpGet]
-	public async Task<PageResponse<Product>> GetClient([FromQuery] PageRequest<ProductFilter> request)
-	{
-		return new PageResponse<Product>()
-		{
-			CurrentPage = 1,
-			HasNextPage = false,
-			MaxPage = 1,
-			Result = new []
-			{
-				new Product()
-				{
-					Id = Guid.NewGuid(),
-					Name = "Produto A"
-				}
-			}
-		};
-	}
+    private readonly DataContext _dataContext;
+    public ProductController(DataContext dataContext)
+    {
+        _dataContext = dataContext;
+    }
+
+    [HttpGet]
+    public async Task<Models.Product[]> GetClient([FromQuery] PageRequest<ProductFilter> request)
+    {
+        return _dataContext.Products.ToArray();
+        /*
+			SELECT * FROM Produto
+		*/
+    }
 }

@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
+using PopShop.Api.DataAccess;
 
 namespace PopShop.Api.Controllers;
 
@@ -7,11 +8,15 @@ namespace PopShop.Api.Controllers;
 [Route("[controller]")]
 public class UserController : Controller
 {
-    public UserController(){}
+    private readonly DataContext _dataContext;
+    public UserController(DataContext dataContext)
+    {
+        _dataContext = dataContext;
+    }
 
     [HttpGet]
-    public string GetUsers()
+    public Models.User[] GetUsers()
     {
-	return "Users";	
+        return _dataContext.Users.ToArray();
     }
 }

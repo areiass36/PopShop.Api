@@ -1,3 +1,10 @@
+/home/mark/Projects/PopShop/PopShop.Api/PopShop.Api/obj/Debug/net6.0/PopShop.Api.csproj.AssemblyReference.cache
+/home/mark/Projects/PopShop/PopShop.Api/PopShop.Api/obj/Debug/net6.0/PopShop.Api.GeneratedMSBuildEditorConfig.editorconfig
+/home/mark/Projects/PopShop/PopShop.Api/PopShop.Api/obj/Debug/net6.0/PopShop.Api.AssemblyInfoInputs.cache
+/home/mark/Projects/PopShop/PopShop.Api/PopShop.Api/obj/Debug/net6.0/PopShop.Api.AssemblyInfo.cs
+/home/mark/Projects/PopShop/PopShop.Api/PopShop.Api/obj/Debug/net6.0/PopShop.Api.csproj.CoreCompileInputs.cache
+/home/mark/Projects/PopShop/PopShop.Api/PopShop.Api/obj/Debug/net6.0/PopShop.Api.MvcApplicationPartsAssemblyInfo.cs
+/home/mark/Projects/PopShop/PopShop.Api/PopShop.Api/obj/Debug/net6.0/PopShop.Api.MvcApplicationPartsAssemblyInfo.cache
 /home/mark/Projects/PopShop/PopShop.Api/PopShop.Api/bin/Debug/net6.0/appsettings.Development.json
 /home/mark/Projects/PopShop/PopShop.Api/PopShop.Api/bin/Debug/net6.0/appsettings.json
 /home/mark/Projects/PopShop/PopShop.Api/PopShop.Api/bin/Debug/net6.0/PopShop.Api
@@ -46,13 +53,6 @@
 /home/mark/Projects/PopShop/PopShop.Api/PopShop.Api/bin/Debug/net6.0/runtimes/win/lib/netstandard2.0/System.Runtime.Caching.dll
 /home/mark/Projects/PopShop/PopShop.Api/PopShop.Api/bin/Debug/net6.0/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
 /home/mark/Projects/PopShop/PopShop.Api/PopShop.Api/bin/Debug/net6.0/runtimes/win/lib/netcoreapp3.0/System.Windows.Extensions.dll
-/home/mark/Projects/PopShop/PopShop.Api/PopShop.Api/obj/Debug/net6.0/PopShop.Api.csproj.AssemblyReference.cache
-/home/mark/Projects/PopShop/PopShop.Api/PopShop.Api/obj/Debug/net6.0/PopShop.Api.GeneratedMSBuildEditorConfig.editorconfig
-/home/mark/Projects/PopShop/PopShop.Api/PopShop.Api/obj/Debug/net6.0/PopShop.Api.AssemblyInfoInputs.cache
-/home/mark/Projects/PopShop/PopShop.Api/PopShop.Api/obj/Debug/net6.0/PopShop.Api.AssemblyInfo.cs
-/home/mark/Projects/PopShop/PopShop.Api/PopShop.Api/obj/Debug/net6.0/PopShop.Api.csproj.CoreCompileInputs.cache
-/home/mark/Projects/PopShop/PopShop.Api/PopShop.Api/obj/Debug/net6.0/PopShop.Api.MvcApplicationPartsAssemblyInfo.cs
-/home/mark/Projects/PopShop/PopShop.Api/PopShop.Api/obj/Debug/net6.0/PopShop.Api.MvcApplicationPartsAssemblyInfo.cache
 /home/mark/Projects/PopShop/PopShop.Api/PopShop.Api/obj/Debug/net6.0/staticwebassets.build.json
 /home/mark/Projects/PopShop/PopShop.Api/PopShop.Api/obj/Debug/net6.0/staticwebassets.development.json
 /home/mark/Projects/PopShop/PopShop.Api/PopShop.Api/obj/Debug/net6.0/scopedcss/bundle/PopShop.Api.styles.css

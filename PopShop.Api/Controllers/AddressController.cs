@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using PopShop.Api.Configurations;
+
 namespace PopShop.Api.Controllers;
 
 [ApiController]
@@ -15,8 +16,7 @@ public class AddressController : Controller
     {
         var httpClient = _httpClientFactory.CreateClient(ApiBaseUrl.VIA_CEP);
         var httpResponse = string.Empty;
-	DateTime time = DateTime.Now;	
-	
+
         try
         {
             httpResponse = await httpClient.GetStringAsync($"{postalcode}/json/");

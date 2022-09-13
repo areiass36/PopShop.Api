@@ -1,5 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
-using Newtonsoft.Json;
+using PopShop.Api.DataContract;
 
 namespace PopShop.Api.Controllers;
 
@@ -7,11 +7,5 @@ namespace PopShop.Api.Controllers;
 [Route("[controller]")]
 public class SaleController : Controller
 {
-    public SaleController(){}
 
-    [HttpGet]
-    public string GetSales()
-    {
-	return "Sale";	
-    }
 }
