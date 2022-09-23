@@ -8,8 +8,7 @@ public class DataContext : DbContext
 {
     public const string SCHEMA = "dbo";
     private readonly IConfiguration _configuration;
-    public DataContext(IConfiguration configuration) =>
-    _configuration = configuration;
+    public DataContext(IConfiguration configuration) => _configuration = configuration;
 
     //public virtual DbSet<Address> Addresses { get; set; }
     //public virtual DbSet<Cart> Carts { get; set; }

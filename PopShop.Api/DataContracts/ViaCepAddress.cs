@@ -2,7 +2,7 @@ using Newtonsoft.Json;
 
 namespace PopShop.Api.DataContract;
 
-public class Address
+public class ViaCepAddress
 {
     [JsonProperty(PropertyName = "cep")]
     public string PostalCode { get; set; } = string.Empty;

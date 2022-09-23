@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using PopShop.Api.DataContract;
+using PopShop.Api.Models;
 
 namespace PopShop.Api.DataAccess.Configurations;
 public class AddressConfiguration : IEntityTypeConfiguration<Address>

@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using PopShop.Api.Configurations;
+using PopShop.Api.DataContract;
 
 namespace PopShop.Api.Controllers;
 
@@ -12,7 +13,7 @@ public class AddressController : Controller
     public AddressController(IHttpClientFactory httpClientFactory) => _httpClientFactory = httpClientFactory;
 
     [HttpGet("{postalcode}")]
-    public async Task<DataContract.Address> GetAddress([FromRoute] string postalcode)
+    public async Task<ViaCepAddress> GetAddress([FromRoute] string postalcode)
     {
         var httpClient = _httpClientFactory.CreateClient(ApiBaseUrl.VIA_CEP);
         var httpResponse = string.Empty;
@@ -23,8 +24,8 @@ public class AddressController : Controller
         }
         catch (HttpRequestException)
         {
-            return new DataContract.Address();
+            return new ViaCepAddress();
         }
-        return JsonConvert.DeserializeObject<DataContract.Address>(httpResponse) ?? new DataContract.Address();
+        return JsonConvert.DeserializeObject<ViaCepAddress>(httpResponse) ?? new ViaCepAddress();
     }
 }
