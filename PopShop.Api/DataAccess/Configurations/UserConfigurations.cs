@@ -5,7 +5,7 @@ using PopShop.Api.Models;
 
 namespace PopShop.Api.DataAccess.Configurations;
 
-public class UserConfiguration : IEntityTypeConfiguration<User>
+public class UserConfigurations : IEntityTypeConfiguration<User>
 {
     public void Configure(EntityTypeBuilder<User> builder)
     {
@@ -37,8 +37,7 @@ public class UserConfiguration : IEntityTypeConfiguration<User>
                .IsRequired();
 
         builder.Property(e => e.PhotoUrl)
-               .HasColumnName("FotoUrl")
-               .IsRequired();
+               .HasColumnName("FotoUrl");
 
         builder.Property(e => e.CreationDate)
                .HasColumnName("DataCriacao")
@@ -47,6 +46,10 @@ public class UserConfiguration : IEntityTypeConfiguration<User>
         builder.Property(e => e.Active)
                .HasColumnName("Ativo")
                .IsRequired();
+
+        builder.HasOne<Document>();
+
+        builder.HasMany<Address>().WithOne();
     }
 
 }

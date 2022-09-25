@@ -20,8 +20,8 @@ CREATE TABLE dbo.Usuario (
 DROP TABLE IF EXISTS dbo.Documento;
 CREATE TABLE dbo.Documento (
     Usuario UNIQUEIDENTIFIER NOT NULL,
-    Tipo TINYINT,
-    Documento VARCHAR(14),
+    Tipo TINYINT NOT NULL,
+    Documento VARCHAR(14) NOT NULL,
     PRIMARY KEY (Usuario, Tipo),
     FOREIGN KEY (Usuario) REFERENCES  dbo.Usuario(Id)
 );
@@ -55,7 +55,7 @@ DROP TABLE IF EXISTS dbo.Loja;
 CREATE TABLE dbo.Loja (
     Id UNIQUEIDENTIFIER DEFAULT NEWID(),
     Nome VARCHAR(60) NOT NULL,
-    Descricao VARCHAR(80) NOT NULL,
+    Descricao VARCHAR(255) NOT NULL,
     FotoUrl VARCHAR,
     Usuario UNIQUEIDENTIFIER NOT NULL,
     PRIMARY KEY (Id),
@@ -112,7 +112,7 @@ CREATE TABLE dbo.ProdutoGostei (
 );
 
 DROP TABLE IF EXISTS dbo.ProdutoAvaliacao;
-CREATE TABLE dbo.ProdutoAvalicao (
+CREATE TABLE dbo.ProdutoAvaliacao (
     Produto UNIQUEIDENTIFIER NOT NULL,
     Usuario UNIQUEIDENTIFIER NOT NULL,
     Texto TEXT NOT NULL,

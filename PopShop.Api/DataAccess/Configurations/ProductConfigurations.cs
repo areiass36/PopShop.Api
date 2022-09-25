@@ -6,7 +6,7 @@ using PopShop.Api.Models;
 
 namespace PopShop.Api.Configurations;
 
-public class ProductConfiguration : IEntityTypeConfiguration<Product>
+public class ProductConfigurations : IEntityTypeConfiguration<Product>
 {
     public void Configure(EntityTypeBuilder<Product> builder)
     {
@@ -19,11 +19,10 @@ public class ProductConfiguration : IEntityTypeConfiguration<Product>
                .IsRequired()
                .HasMaxLength(150);
 
-        builder.Ignore(e => e.Price);
-        /*builder.Property(e => e.Price)
+        builder.Property(e => e.Price)
                .HasColumnName("Pecro")
                .IsRequired()
-               .HasPrecision(10, 2);*/
+               .HasPrecision(10, 2);
 
         builder.Property(e => e.Description)
                .HasColumnName("Descricao")
@@ -37,6 +36,13 @@ public class ProductConfiguration : IEntityTypeConfiguration<Product>
                .HasColumnName("Ativo")
                .IsRequired();
 
-        builder.Ignore(e => e.Store);
+        builder.HasOne<Store>().WithMany();
+
+        builder.HasMany<ProductLike>().WithOne();
+
+        builder.HasMany<ProductVariation>().WithOne();
+
+        builder.HasMany<ProductPhoto>().WithOne();
+
     }
 }

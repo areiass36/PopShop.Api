@@ -2,7 +2,7 @@ namespace PopShop.Api.Models;
 
 public class Document
 {
-    /*public User User { get; set; }*/
+    public Guid UserId { get; set; }
     public DocumentType Type { get; set; }
     public string Value { get; set; } = string.Empty;
 }

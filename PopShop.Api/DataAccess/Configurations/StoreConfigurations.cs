@@ -1,10 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using PopShop.Api.DataContract;
+using PopShop.Api.Models;
 
 namespace PopShop.Api.DataAccess.Configurations
 {
-    public class StoreConfiguration : IEntityTypeConfiguration<Store>
+    public class StoreConfigurations : IEntityTypeConfiguration<Store>
     {
         public void Configure(EntityTypeBuilder<Store> builder)
         {
@@ -20,10 +20,14 @@ namespace PopShop.Api.DataAccess.Configurations
             builder.Property(e => e.Description)
                 .HasColumnName("Descricao")
                 .IsRequired()
-                .HasMaxLength(80);
+                .HasMaxLength(255);
 
             builder.HasKey(e => e.PhotoUrl)
                 .HasName("FotoUrl");
+
+            builder.HasOne<User>().WithOne();
+
+            builder.HasMany<StoreLike>().WithOne();
 
         }
     }

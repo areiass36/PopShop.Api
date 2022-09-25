@@ -11,6 +11,7 @@ public class Product
     public IEnumerable<ProductLike> Likes { get; set; } = Enumerable.Empty<ProductLike>();
     public IEnumerable<ProductPhoto> Photos { get; set; } = Enumerable.Empty<ProductPhoto>();
     public IEnumerable<ProductVariation> Variations { get; set; } = Enumerable.Empty<ProductVariation>();
+    public IEnumerable<Review> Reviews { get; set; } = Enumerable.Empty<Review>();
 
     public bool Active { get; set; }
 }

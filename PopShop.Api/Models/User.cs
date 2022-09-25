@@ -10,6 +10,8 @@ public class User
     public Role Role { get; set; }
     public string PhotoUrl { get; set; } = string.Empty;
     public DateTime CreationDate { get; set; }
-    public Document Document { get; set; } = new();
     public bool Active { get; set; }
+    public Document Document { get; set; } = new();
+    public IEnumerable<Address> Addresses { get; set; } = Enumerable.Empty<Address>();
+
 }
