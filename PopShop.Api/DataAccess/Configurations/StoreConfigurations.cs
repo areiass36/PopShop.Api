@@ -25,8 +25,8 @@ namespace PopShop.Api.DataAccess.Configurations
             builder.HasKey(e => e.PhotoUrl)
                 .HasName("FotoUrl");
 
-            builder.HasOne<User>().WithOne();
-
+            builder.HasOne(e => e.User).WithOne();
+            
             builder.HasMany<StoreLike>().WithOne();
 
         }

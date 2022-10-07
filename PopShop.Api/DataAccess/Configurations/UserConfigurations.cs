@@ -46,10 +46,6 @@ public class UserConfigurations : IEntityTypeConfiguration<User>
         builder.Property(e => e.Active)
                .HasColumnName("Ativo")
                .IsRequired();
-
-        builder.HasOne<Document>();
-
-        builder.HasMany<Address>().WithOne();
     }
 
 }

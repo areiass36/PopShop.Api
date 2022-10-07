@@ -9,9 +9,9 @@ CREATE TABLE dbo.Usuario (
     Nome VARCHAR(30) NOT NULL,
     Sobrenome VARCHAR(80) NOT NULL,
     Email VARCHAR(80) NOT NULL,
-    Senha VARCHAR NOT NULL,
+    Senha VARCHAR(255) NOT NULL,
     Cargo TINYINT NOT NULL,
-    FotoUrl VARCHAR,
+    FotoUrl VARCHAR(255) ,
     DataCriacao DATETIME NOT NULL,
     Ativo BIT NOT NULL,
     PRIMARY KEY (Id),
@@ -56,8 +56,8 @@ CREATE TABLE dbo.Loja (
     Id UNIQUEIDENTIFIER DEFAULT NEWID(),
     Nome VARCHAR(60) NOT NULL,
     Descricao VARCHAR(255) NOT NULL,
-    FotoUrl VARCHAR,
-    Usuario UNIQUEIDENTIFIER NOT NULL,
+    FotoUrl VARCHAR(255),
+    Usuario UNIQUEIDENTIFIER NOT NULL,q
     PRIMARY KEY (Id),
     FOREIGN KEY (Usuario) REFERENCES  dbo.Usuario(Id)
 );
@@ -88,7 +88,7 @@ DROP TABLE IF EXISTS  dbo.ProdutoFoto;
 CREATE TABLE dbo.ProdutoFoto (
     Id UNIQUEIDENTIFIER DEFAULT NEWID(),
     Produto UNIQUEIDENTIFIER NOT NULL,
-    FotoUrl VARCHAR NOT NULL,
+    FotoUrl VARCHAR(255) NOT NULL,
     PRIMARY KEY (Id),
     FOREIGN KEY (Produto) REFERENCES  dbo.Produto(Id)
 );

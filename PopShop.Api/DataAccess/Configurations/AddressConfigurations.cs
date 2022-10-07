@@ -45,6 +45,6 @@ public class AddressConfigurations : IEntityTypeConfiguration<Address>
                .HasColumnName("Complemento")
                .HasMaxLength(100);
 
-        builder.HasOne<User>().WithMany().HasForeignKey(e => e.UserId);
+        builder.HasOne<User>().WithMany(e => e.Addresses);
     }
 }

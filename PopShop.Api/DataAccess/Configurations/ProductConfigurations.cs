@@ -20,7 +20,7 @@ public class ProductConfigurations : IEntityTypeConfiguration<Product>
                .HasMaxLength(150);
 
         builder.Property(e => e.Price)
-               .HasColumnName("Pecro")
+               .HasColumnName("Preco")
                .IsRequired()
                .HasPrecision(10, 2);
 
@@ -38,11 +38,11 @@ public class ProductConfigurations : IEntityTypeConfiguration<Product>
 
         builder.HasOne<Store>().WithMany();
 
-        builder.HasMany<ProductLike>().WithOne();
+        //builder.HasMany<ProductLike>.WithOne();
 
-        builder.HasMany<ProductVariation>().WithOne();
+        //builder.HasMany<ProductVariation>().WithOne();
 
-        builder.HasMany<ProductPhoto>().WithOne();
+        //builder.HasMany<ProductPhoto>().WithOne();
 
     }
 }

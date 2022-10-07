@@ -19,6 +19,6 @@ public class ProductVariationConfigurations : IEntityTypeConfiguration<ProductVa
                .IsRequired()
                .HasMaxLength(60);
 
-        builder.HasOne<Product>().WithMany();
+        builder.HasOne<Product>().WithMany(e => e.Variations);
     }
 }

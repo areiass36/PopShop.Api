@@ -18,6 +18,6 @@ public class ProductPhotoConfigurations : IEntityTypeConfiguration<ProductPhoto>
                .HasColumnName("FotoUrl")
                .IsRequired();
 
-        builder.HasOne<Product>().WithMany();
+        builder.HasOne<Product>().WithMany(e => e.Photos);
     }
 }

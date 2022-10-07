@@ -6,6 +6,7 @@ public class Store
     public string Name { get; set; } = string.Empty;
     public string Description { get; set; } = string.Empty;
     public string PhotoUrl { get; set; } = string.Empty;
+    public Guid UserId { get; set; }
     public User User { get; set; } = new();
     public IEnumerable<StoreLike> Likes { get; set; } = Enumerable.Empty<StoreLike>();
 }

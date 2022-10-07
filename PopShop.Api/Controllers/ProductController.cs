@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using PopShop.Api.DataAccess;
 using PopShop.Api.DataContract;
 
@@ -15,9 +16,9 @@ public class ProductController : ControllerBase
     }
 
     [HttpGet]
-    public async Task<Models.Product[]> GetClient([FromQuery] PageRequest<ProductFilter> request)
+    public ICollection<Models.Product> GetClient([FromQuery] PageRequest<ProductFilter> request)
     {
-        return _dataContext.Products.ToArray();
+        return _dataContext.Products.ToList();
         /*
 			SELECT * FROM Produto
 		*/

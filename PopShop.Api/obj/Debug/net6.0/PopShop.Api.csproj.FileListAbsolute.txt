@@ -122,7 +122,7 @@ C:/workspace/PopShop/PopShop.Api/obj/Debug/net6.0/ref/PopShop.Api.dll
 /home/mark/Projects/PopShop/PopShop.Api/PopShop.Api/obj/Debug/net6.0/scopedcss/bundle/PopShop.Api.styles.css
 /home/mark/Projects/PopShop/PopShop.Api/PopShop.Api/obj/Debug/net6.0/PopShop.Api.csproj.CopyComplete
 /home/mark/Projects/PopShop/PopShop.Api/PopShop.Api/obj/Debug/net6.0/PopShop.Api.dll
-/home/mark/Projects/PopShop/PopShop.Api/PopShop.Api/obj/Debug/net6.0/refint/PopShop.Api.dll
 /home/mark/Projects/PopShop/PopShop.Api/PopShop.Api/obj/Debug/net6.0/PopShop.Api.pdb
 /home/mark/Projects/PopShop/PopShop.Api/PopShop.Api/obj/Debug/net6.0/PopShop.Api.genruntimeconfig.cache
 /home/mark/Projects/PopShop/PopShop.Api/PopShop.Api/obj/Debug/net6.0/ref/PopShop.Api.dll
+/home/mark/Projects/PopShop/PopShop.Api/PopShop.Api/obj/Debug/net6.0/refint/PopShop.Api.dll

@@ -21,7 +21,7 @@ namespace PopShop.Api.DataAccess.Configurations
                    .IsRequired()
                    .HasMaxLength(14);
 
-            builder.HasOne<User>().WithOne();
+            builder.HasOne<User>().WithOne(e => e.Document);
         }
     }
 
